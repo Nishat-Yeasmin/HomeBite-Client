@@ -111,8 +111,7 @@ export default function CategorySection() {
       {/* MAIN SECTION */}
       <div className="relative w-full overflow-hidden bg-olive-200 py-16 shadow-[0_20px_70px_rgba(44,14,5,0.08)] sm:py-20 lg:py-24">
 
-          {/* TOP FADE */}
-    <div className="pointer-events-none absolute left-0 right-0 top-0 z-10 h-20 bg-gradient-to-b from-[#FFF8F3] via-[#FFF8F3]/60 to-transparent" />
+          
 
         {/* Decorative Background */}
         <div className="pointer-events-none absolute -left-40 top-0 h-[450px] w-[450px] rounded-full bg-[#F3A789]/20 blur-3xl" />

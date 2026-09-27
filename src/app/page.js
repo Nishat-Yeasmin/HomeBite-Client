@@ -2,6 +2,7 @@ import CategorySection from "./components/CategorySection";
 import FeaturedFoods from "./components/FeaturedFoods";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import SpecialOffers from "./components/SpecialOffers";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <Hero/>
       <FeaturedFoods/>
       <CategorySection/>
+      <SpecialOffers/>
+      
       <Footer/>
       
     </main>

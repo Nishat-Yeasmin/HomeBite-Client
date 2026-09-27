@@ -83,8 +83,11 @@ const marqueeFoods = [...foods, ...foods];
 
 export default function FeaturedFoods() {
   return (
-    <section className="w-full bg-[#FFF8F3] px-0 py-10 sm:py-14 lg:py-16 my-2">
+    <section className="w-full bg-[#FFF8F3] px-0 py-10 sm:py-14 lg:py-16 my-0">
       <div className="relative w-full overflow-hidden rounded-[20px] bg-[#F3E3DC] py-16 shadow-[0_20px_70px_rgba(44,14,5,0.08)] sm:py-20 lg:py-24">
+
+        <div className="pointer-events-none absolute left-0 right-0 top-0 z-20 h-28 bg-gradient-to-b from-[#FFF8F3] via-[#FFF8F3]/40 to-transparent blur-[1px]" />
+
         {/* Decorative Background */}
         <div className="pointer-events-none absolute -left-40 top-10 h-96 w-96 rounded-full bg-[#F3A789]/20 blur-3xl" />
 
@@ -136,8 +139,12 @@ export default function FeaturedFoods() {
               ))}
             </div>
           </div>
+         
         </div>
+         <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-28 bg-gradient-to-t from-[#FFF8F3] via-[#FFF8F3]/40 to-transparent blur-[1px]" />
+        
       </div>
+     
 
       <style jsx>{`
         .featured-food-track {
@@ -177,6 +184,8 @@ export default function FeaturedFoods() {
           }
         }
       `}</style>
+
+      
     </section>
   );
 }
@@ -245,6 +254,8 @@ function FoodCard({ food }) {
           </button>
         </div>
       </div>
+      
     </article>
+    
   );
 }

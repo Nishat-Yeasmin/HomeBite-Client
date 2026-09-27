@@ -106,16 +106,21 @@ export default function CategorySection() {
   };
 
   return (
-    <section className="w-full overflow-hidden bg-[#FFF8F3] px-0 py-10 sm:py-14 lg:py-16">
+    <section className="w-full overflow-hidden bg-[#FFF8F3] px-0 py-0 sm:py-0 lg:py-0 my-0 rounded-xl">
+
       {/* MAIN SECTION */}
       <div className="relative w-full overflow-hidden bg-olive-200 py-16 shadow-[0_20px_70px_rgba(44,14,5,0.08)] sm:py-20 lg:py-24">
+
+          {/* TOP FADE */}
+    <div className="pointer-events-none absolute left-0 right-0 top-0 z-10 h-20 bg-gradient-to-b from-[#FFF8F3] via-[#FFF8F3]/60 to-transparent" />
+
         {/* Decorative Background */}
         <div className="pointer-events-none absolute -left-40 top-0 h-[450px] w-[450px] rounded-full bg-[#F3A789]/20 blur-3xl" />
 
         <div className="pointer-events-none absolute -bottom-40 right-0 h-[450px] w-[450px] rounded-full bg-[#CF9D8F]/20 blur-3xl" />
 
         {/* HEADER */}
-        <div className="relative z-50 mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-6 sm:px-10 lg:flex-row lg:items-end lg:px-16 xl:px-24">
+        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-6 sm:px-10 lg:flex-row lg:items-end lg:px-16 xl:px-24">
           {/* LEFT CONTENT */}
           <div>
             {/* Badge */}
@@ -328,6 +333,10 @@ export default function CategorySection() {
         <p className="relative z-30 mt-5 text-center text-xs font-medium tracking-wide text-[#6B4A40]/70">
           Made fresh • Made with care • Made at home
         </p>
+
+        {/* BOTTOM FADE */}
+<div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-24 bg-gradient-to-t from-[#FFF8F3] via-[#FFF8F3]/60 to-transparent" />
+
       </div>
     </section>
   );

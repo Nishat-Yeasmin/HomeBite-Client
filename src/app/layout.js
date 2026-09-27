@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "HomeBite",
   description: "Homemade Food Ordering & Management System",
+  icons: {
+    icon: "images/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

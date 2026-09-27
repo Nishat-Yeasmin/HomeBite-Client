@@ -69,7 +69,7 @@ const offers = [
 
 export default function SpecialOffers() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#FFF8F3] py-20 sm:py-24 lg:py-28">
+    <section className="relative w-full overflow-hidden bg-[#FFF8F3] sm:pb-16 lg:pb-16">
 
       {/* SOFT BACKGROUND GLOWS */}
       <div className="pointer-events-none absolute -left-40 top-[-120px] h-[500px] w-[500px] rounded-full bg-[#E7B8A8]/15 blur-[140px]" />

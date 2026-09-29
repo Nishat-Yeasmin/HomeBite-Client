@@ -12,6 +12,7 @@ import {
   FiMoon,
   FiLogOut,
   FiSettings,
+  
 } from "react-icons/fi";
 
 export default function Navbar() {
@@ -56,7 +57,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Menu", href: "/menu" },
+    { name: "Menu", href: "/menu"},
     { name: "Offers", href: "/offers" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -137,11 +138,9 @@ export default function Navbar() {
                     }}
                   >
                     {/* Link Text */}
-                    <span
-                      className="transition-all duration-300 group-hover:text-[#5A2D1F]"
-                    >
-                      {link.name}
-                    </span>
+   <span className="transition-all duration-300 group-hover:text-[#5A2D1F]">
+  {link.name}
+</span>
 
                     {/* Active / Hover Gradient Underline */}
                     <span
@@ -328,9 +327,9 @@ export default function Navbar() {
                       color: isActive ? chocolate : undefined,
                     }}
                   >
-                    <span className="transition-colors duration-300 group-hover:text-[#5A2D1F]">
-                      {link.name}
-                    </span>
+<span className="transition-colors duration-300 group-hover:text-[#5A2D1F]">
+  {link.name}
+</span>
 
                     {/* MOBILE ACTIVE / HOVER UNDERLINE */}
                     <span

@@ -147,7 +147,7 @@ export default function CategorySection() {
 
           {/* VIEW ALL */}
           <Link
-            href="/categories"
+            href="/menu"
             className="group inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-full border border-[#CF9D8F]/50 bg-white/80 px-5 py-3 text-sm font-semibold text-[#2C0E05] shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#2C0E05] hover:text-white hover:shadow-lg"
           >
             View All Categories
